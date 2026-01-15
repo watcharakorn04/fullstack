@@ -1,6 +1,7 @@
 function yayOrNay() {
     return new Promise((resolve, reject) => {
         const val = Math.round(Math.random() * 1);
+        console.log("Generated:", val);
 
         //0 or 1, at radom
         val ? resolve("Lucky!!") : reject("Nope 🤔")

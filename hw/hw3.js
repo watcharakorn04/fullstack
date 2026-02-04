@@ -59,7 +59,7 @@ function processLogs(logs) {
         }
     }
 
-        let mostActiveUser = null;
+        let mostActiveUser = '';
         let maxActions = 0;
 
         for (const user in totalActionsPerUser) {

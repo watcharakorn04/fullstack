@@ -1,0 +1,26 @@
+function yayOrNay() {
+    return new Promise((resolve, reject) => {
+        const val = Math.round(Math.random() * 1);
+        console.log("Generated:", val);
+
+        //0 or 1, at radom
+        val ? resolve("Lucky!!") : reject("Nope 🤔")
+    });
+}
+
+async function msg() {
+    try {
+        const msg = await yayOrNay();
+        console.log(msg);
+    } catch (err) {
+        console.log(err);
+    }
+}
+
+msg(); //Lucky!!
+msg(); //Lucky!!
+msg(); //Lucky!!
+msg(); //Nope 🤔
+msg(); //Lucky!!
+msg(); //Nope 🤔
+msg(); //Nope 🤔
